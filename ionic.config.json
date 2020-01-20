@@ -1,5 +1,7 @@
 {
   "name": "Missed",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

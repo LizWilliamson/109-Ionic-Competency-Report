@@ -1,9 +1,49 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      Post New Message
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      Create New Post
+    </ion-card-header>
+
+    <ion-card-content class="">
+      <ion-item>
+        <ion-label position="stacked">Your Message:</ion-label>
+        <ion-input [(ngModel)]="model.message" name="message"></ion-input>
+    
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Image:</ion-label>
+        <ion-input [(ngModel)]="model.imageURL" name="imageUrl"></ion-input>
+
+        <hr>
+        <ion-button color="primary" expand="block" size="small" (click)="chooseImage(0)"> Choose Image</ion-button>
+        <ion-button color="primary" expand="block" size="small" (click)="chooseImage(1)"> Take Photo</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">To:</ion-label>
+        <ion-select [(ngModel)]="model.to">
+          <ion-select-option value="Everyone">Everyone</ion-select-option>
+          <ion-select-option *ngFor="let f of myFriends" [value]="f.name">{{ f.name }} 
+          </ion-select-option>
+        </ion-select>
+
+      </ion-item>
+
+      <ion-button (click)="sendPost();" expand="block" size="medium" color="primary">Post</ion-button>
+
+      
+  
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

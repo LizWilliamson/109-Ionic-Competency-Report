@@ -1,1 +1,33 @@
 
+/*not empty anymore*/
+
+.background{
+    --background: #EEE2DC;
+}
+
+ion-card{
+    background-color: white;
+}
+
+ion-card-header{
+    text-align: center;
+    font-weight: bold;
+    color: #AC3B61;
+    padding-bottom: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    
+    line-height: 25px;
+    background-color: #BAB2B5;
+
+}
+
+ion-card-content{
+    padding-top: 5px;
+}
+
+ion-label{
+    
+    color: #AC3B61;
+}
+

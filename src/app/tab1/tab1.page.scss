@@ -2,3 +2,45 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+ion-card-header{
+  background-color: white;
+  
+  
+
+}
+
+.background {
+  --background: #EEE2DC;
+}
+
+ion-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+ion-card-content{
+  padding-bottom: 5px;
+}
+
+img{
+  max-height: 300px;
+}
+
+ion-card-title{
+  font-size: 20px;
+  color: #AC3B61;
+
+}
+
+ion-card-subtitle{
+  // text-align: right;
+  text-transform: none;
+  color: #BAB2B5;
+  width: 50%;
+  display: inline-block;
+}
+
+.date{
+  text-align: right;
+}

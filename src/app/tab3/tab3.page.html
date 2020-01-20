@@ -1,9 +1,39 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Three
+      Friends
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+      Find New Friends
+    </ion-card-header>
+
+    <ion-card-content class="">
+      <ion-item>
+        <ion-label position="stacked">Name:</ion-label>
+        <ion-input [(ngModel)]="model.name" name="name"></ion-input>
+
+      </ion-item>
+
+      
+
+      <ion-button (click)="saveFriend();" expand="block" size="medium" color="primary">Save Friend</ion-button>
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let friend of myFriends">
+      {{ friend.name }}
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
